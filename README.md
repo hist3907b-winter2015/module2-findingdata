@@ -10,9 +10,9 @@ Big data is not value-neutral; we need to think about, and talk about, what it m
 Accepting that big data is out there, that there's more material than one person can usefully digest and understand, and that a big-picture, macroscopic point of view is a useful perspective, means also thinking about the digital milieu that makes this possible. We'll discuss this in class, and as you do your projects, think about the ethical, moral, and legal dimensions to what you are doing. Keep track of your thoughts in your open notebook.
 
 ### Ok, so?
-So how can we find big data? The exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well.
+So how can we find big data? The exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well. 
 
-Here are some useful starting points, datasets that have already been collected, via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!)
+Here are some useful starting points, datasets that have already been collected, via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!). I've added some entries; feel free to fork this document and add more!
 
 + National Historical GIS: “tabular U.S. census data and GIS boundary files from 1790 to the present.” [link](http://nhgis.org/)
 + IPUMS-International: “harmonized data for 1960 forward, covering 560 million people in 258 censuses from around the world.” [link](http://international.ipums.org/international/)
@@ -28,3 +28,5 @@ Here are some useful starting points, datasets that have already been collected,
 + Geonames: the GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge. [link](http://www.geonames.org/) 
 + Project Gutenburg has plain-text versions of many public domain books. [link](http://www.gutenberg.org/)
 + Project GITenberg has many of the same book available via Git. [link](https://gitenberg.github.io/)
++ Canadiana Discovery Portal [link](http://search.canadiana.ca/support/api)
++ Archaeology Data Service [link](http://archaeologydataservice.ac.uk/)
