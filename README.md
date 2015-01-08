@@ -7,7 +7,7 @@ How do we find data, anyway?
 
 Big data is not value-neutral; we need to think about, and talk about, what it means to collect, transform, analyze and visualize it. Who has the power here? (and you might also reflect on ['the most profitable obsolete technology'](http://www.huffingtonpost.com/jason-schmitt/academic-journals-the-mos_1_b_6368204.html) )
 
-Accepting that big data is out there, that there's more material than one person can usefully digest and understand, and that a big-picture, macroscopic point of view is a useful perspective, means also thinking about the digital milieu that makes this possible.
+Accepting that big data is out there, that there's more material than one person can usefully digest and understand, and that a big-picture, macroscopic point of view is a useful perspective, means also thinking about the digital milieu that makes this possible. We'll discuss this in class, and as you do your projects, think about the ethical, moral, and legal dimensions to what you are doing. Keep track of your thoughts in your open notebook.
 
 ### Ok, so?
 So how can we find big data? The exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well.
