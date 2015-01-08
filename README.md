@@ -12,7 +12,7 @@ Accepting that big data is out there, that there's more material than one person
 ### Ok, so?
 So how can we find big data? The exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well.
 
-Here are some useful starting points, datasets that have already been collected (via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!)
+Here are some useful starting points, datasets that have already been collected, via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!)
 
 + National Historical GIS: “tabular U.S. census data and GIS boundary files from 1790 to the present.” [link](http://nhgis.org/)
 + IPUMS-International: “harmonized data for 1960 forward, covering 560 million people in 258 censuses from around the world.” [link](http://international.ipums.org/international/)
