@@ -30,3 +30,13 @@ Here are some useful starting points, datasets that have already been collected,
 + Project GITenberg has many of the same book available via Git. [link](https://gitenberg.github.io/)
 + Canadiana Discovery Portal [link](http://search.canadiana.ca/support/api)
 + Archaeology Data Service [link](http://archaeologydataservice.ac.uk/)
++  [History of the Federal Electoral Ridings, 1867-2010](http://data.gc.ca/data/en/dataset/ea8f2c37-90b6-4fee-857e-984d3060184e)
++  [Soldiers of the First World War](Soldiers of the First World War database.)
++  [Birth registrations in Ontario (by location), 1912-2010](http://www.ontario.ca/government/birth-registrations-ontario-location)
++  [Ontario top baby names (male), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-male)
++  [Ontario top baby names (female), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-female)
++  [Marriage registrations in Ontario (by location), 1927-2010](http://www.ontario.ca/government/marriage-registrations-ontario-location)
+
+### And don't forget serendipity
+Follow researchers and institutions in your field of study. Today on Twitter I saw something that struck me as an excellent find. Penn Libraries tweeted, and I retweeted, [a link to a traveller's diary from the 19th century](http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5103295) - a woman who sailed up the Nile 
+[My tweet](https://twitter.com/electricarchaeo/status/555078078511460352) led to a flurry of activity amongst scholars, and even now, the transcription has begun...
