@@ -1,4 +1,6 @@
-Here are some useful starting points, datasets that have already been collected, via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!). I've added some entries; feel free to fork this document and add more!
+_feel free to fork this, and contribute more resources as you find them_
+
+Here are some useful starting points, datasets that have already been collected, via [Jason Heppler](http://jasonheppler.org/teaching/hist205f.2014/resources/) and [Lincoln Mullen](http://lincolnmullen.com/) and [Ian Milligan](http://ianmilligan.ca) (protip: find the digital historians working in your area of interest, and see what they've put up on their blogs & open notebooks!). I've added some entries; feel free to fork this document and add more!
 
 + National Historical GIS: “tabular U.S. census data and GIS boundary files from 1790 to the present.” [link](http://nhgis.org/)
 + IPUMS-International: “harmonized data for 1960 forward, covering 560 million people in 258 censuses from around the world.” [link](http://international.ipums.org/international/)
