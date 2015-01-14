@@ -12,6 +12,8 @@ Accepting that big data is out there, that there's more material than one person
 ### Ok, so?
 So how can we find big data? The exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well. 
 
+You might like to begin with [this list of resources; more being added in time.](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/resources.md)
+
 
 ### And don't forget serendipity
 Follow researchers and institutions in your field of study. Today on Twitter I saw something that struck me as an excellent find. Penn Libraries tweeted, and I retweeted, [a link to a traveller's diary from the 19th century](http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5103295) - a woman who sailed up the Nile 
