@@ -6,9 +6,9 @@ Where do we go to find data? Part of that problem is solved by knowing what ques
 [Ian Milligan](http://ianmilligan.ca) recently gave a [workshop on these issues](https://ianmilli.files.wordpress.com/2015/01/downloading-sources2.pdf). He identifies a few different ways by which you might obtain your data:
 
 + The Dream Case
++ Scraping Data yourself with free software (Outwit Hub)
 + Application Programming Interfaces (APIs)
-+ Scraping Data yourself (Outwit Hub)
-+ Computational Methods (Python, Bash, [Programming Historian](http://theprogramminghistorian.ca) 
+
 
 There is so much data available; with these methods, we can gather enormous amounts that will let us see large-scale macroscopic patterns. At the same time, it allows us to dive into the details with comparative ease. The thing is, not all digital data are created equally. Google has spent millions digitizing *everything*; newspapers have digitized their own collections. Genealogists and local historical societies upload yoinks of digitized photographs, wills, local tax records, [you-name-it](http://www.bytown.net/), *every day*. But, consider what Milligan has to say about ['illusionary order'](http://ianmilligan.ca/2012/03/26/illusionary-order-cautionary-notes-for-online-newspapers/):
 
@@ -28,7 +28,12 @@ In the dream case, your data are not just images, but are actually sorted and st
 
 Explore both databases. Perform a search of interest to you. In the case of the epigraphic database, if you've done any Latin, try searching for terms related to occupations; or you could search '[Figlin*](http://www.latin-dictionary.org/Latin-English-Dictionary/figlina)'. In the CWGC database, search your own surname. Download your results. You now have data that you can explore! In your online research notebook, make a record (or records) of what you searched, the URL for your search & its results, and where you're keeping your data. 
 
-# Exercise 2: APIs
+# Exercise 2: Outwit Hub
+
+blah blah blah
+
+
+# Exercise 3: APIs
 Sometimes, a website will have what is called an 'application programming interface'. In essence, this lets a program on your computer talk to the computer serving the website you're interested in, such that the website gives you the data that you're looking for.
 
 That is, instead of *you* punching in the search terms, and copying and pasting the results, you get the computer to do it. More or less. The thing is, the results come back to you in a machine-readable format - often, JSON, which is a kind of text format. It looks like this:
