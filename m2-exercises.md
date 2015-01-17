@@ -8,6 +8,7 @@ Where do we go to find data? Part of that problem is solved by knowing what ques
 + The Dream Case
 + Scraping Data yourself with free software (Outwit Hub)
 + Application Programming Interfaces (APIs)
++ Wget
 
 There is so much data available; with these methods, we can gather enormous amounts that will let us see large-scale macroscopic patterns. At the same time, it allows us to dive into the details with comparative ease. The thing is, not all digital data are created equally. Google has spent millions digitizing *everything*; newspapers have digitized their own collections. Genealogists and local historical societies upload yoinks of digitized photographs, wills, local tax records, [you-name-it](http://www.bytown.net/), *every day*. But, consider what Milligan has to say about ['illusionary order'](http://ianmilligan.ca/2012/03/26/illusionary-order-cautionary-notes-for-online-newspapers/):
 
@@ -103,4 +104,12 @@ And then you can run it by typing:
 
 Install these. Restart your computer. 
 
+Or maybe cygwin. I'm installing it right now, will get back to you.
+
 _more to come_
+
+# Wget
+
+Finally, wget. This is an extremely useful piece of software. First thing: you'll need to install it. As ever, this is simple on a Mac and a bit more difficult on a PC. Go to [the programming historian tutorial on wget](http://programminghistorian.org/lessons/automated-downloading-with-wget) and get it installed.
+
+This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/2015/01/downloading-sources2.pdf).
