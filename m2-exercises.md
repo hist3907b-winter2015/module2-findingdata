@@ -33,12 +33,28 @@ Sometimes, a website will have what is called an 'application programming interf
 That is, instead of *you* punching in the search terms, and copying and pasting the results, you get the computer to do it. More or less. The thing is, the results come back to you in a machine-readable format - often, JSON, which is a kind of text format. It looks like this:
 ![Imgur](http://i.imgur.com/LtZWyle.png)
 
-The 'Canadiana Discovery Portal' has tonnes of materials related to Canada's history, from a wide variety of sources.
-http://search.canadiana.ca/
+The 'Canadiana Discovery Portal' has tonnes of materials related to Canada's history, from a wide variety of sources. Its search page is at: http://search.canadiana.ca/
 
-XERCISE: principles of search; digital history treasure hunt
-EXERCISE: semantic data, xml, and TEI tutorials
-EXERCISE: text versus other kinds of digital data: how to digitize 3d objects as a lesson in metadata
-EXERCISE: grabbing data using
++ Go there, and search "ottawa" and set the date range to 1800 to 1900. Hit enter. You are presented with a page of results. But do you notice the address bar of your browser? It'll say something like this:
 
-he exercises in this module will teach you how to use wget on the command line to grab webpages; they will introduce you to the concept of APIs and what you might achieve with them as a historian; they will have you use some existing free and commercial tools for webscraping; and we will also learn how to grab social media data as well.
+http://search.canadiana.ca/search?q=ottawa&field=&df=1800&dt=1900
+
+56 249 results! That's a lot of data. Your search query has been put into the URL. You're looking at the API! Everything after /search is a command that you are sending to the Canadiana server.
+
+Scroll through the results, and you'll see a number just before the ?
+
+http://search.canadiana.ca/search/2?df=1800&dt=1900&q=ottawa&field=
+
+http://search.canadiana.ca/search/3?df=1800&dt=1900&q=ottawa&field=
+
+http://search.canadiana.ca/search/4?df=1800&dt=1900&q=ottawa&field=
+
+....all the way up to 5625 (ie, 10 results per page, so 56249 / 10).
+
+ If you go to http://search.canadiana.ca/support/api you can see the full list of options. What we are particularly interested in now is the bit that looks like this:
+
+&fmt=json
+
+Add that to your query URL. How different the results now look! If you look back at the full list of API options, you'll see at the bottom that one of the options is 'retrieving individual item records'; the key for that is a field called 'oocihm'. If you look at your page of json results, and scroll through them, you'll see that each individual record has its own oocihm number. If we could get a list of those, we'd 
+
+
