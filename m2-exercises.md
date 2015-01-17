@@ -29,7 +29,7 @@ Explore both databases. Perform a search of interest to you. In the case of the 
 Sometimes, a website will have what is called an 'application programming interface'. In essence, this lets a program on your computer talk to the computer serving the website you're interested in, such that the website gives you the data that you're looking for.
 
 That is, instead of *you* punching in the search terms, and copying and pasting the results, you get the computer to do it. More or less. The thing is, the results come back to you in a machine-readable format - often, JSON, which is a kind of text format. It looks like this:
-
+![Imgur](http://i.imgur.com/LtZWyle.png)
 
 
 
