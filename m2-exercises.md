@@ -15,6 +15,7 @@ There is so much data available; with these methods, we can gather enormous amou
 > [...] poor and misunderstood use of online newspapers can skew historical research. In a conference presentation or a lecture, it’s not uknown to see the familiar yellow highlighting of found searchwords on projected images: indicative of how the original primary material was obtained. But this historical approach generally usually remains unspoken, without a critical methodological reflection. As I hope I’ll show here, using Pages of the Past uncritically for historical research is akin to using a volume of the Canadian Historical Review with 10% or so of the pages ripped out. Historians, journalists, policy researchers, genealogists, and amateur researchers need to at least have a basic understanding of what goes on behind the black box.
 
 Please go and read that full article. You should makes some notes: what are some of the key dangers? Reflect: how have you used digitized resources uncritically in the past?
+
 ---------
 
 Remember: 'To digitize' doesn't - or shouldn't - mean uploading a photograph of a document. There's a lot more going on that that. We'll get to that in a moment.
@@ -55,6 +56,28 @@ http://search.canadiana.ca/search/4?df=1800&dt=1900&q=ottawa&field=
 
 &fmt=json
 
-Add that to your query URL. How different the results now look! If you look back at the full list of API options, you'll see at the bottom that one of the options is 'retrieving individual item records'; the key for that is a field called 'oocihm'. If you look at your page of json results, and scroll through them, you'll see that each individual record has its own oocihm number. If we could get a list of those, we'd 
+Add that to your query URL. How different the results now look! What's nice here is that the data is formatted in a way that makes sense to a machine - which we'll learn more about in due course.
+
+If you look back at the full list of API options, you'll see at the bottom that one of the options is 'retrieving individual item records'; the key for that is a field called 'oocihm'. If you look at your page of json results, and scroll through them, you'll see that each individual record has its own oocihm number. If we could get a list of those, we'd be able to programmatically slot them into the commands for retrieving individual item records:
+
+http://eco.canadiana.ca/view/oocihm.16278/?r=0&s=1&fmt=json&api_text=1
+
+The problem is: how to retrieve those oocihm numbers. The answer is, 'we write a program'. And the program that you want can be [found here](http://ianmilligan.ca/api-example-sh/). Study that program carefully. There are a number of useful things happening in there, notably 'curl', 'jq', 'sed', 'awk'. curl  is a program for downloading webpages, jq for dealing with json, and sed and awk for searching within and cleaning up text. If this all sounds greek to you, there is an excellent gentle introduction over at [the Programming Historian](http://programminghistorian.org/lessons/intro-to-bash) you should read now.
+
+### Mac instructions:
+
+If you have a Mac, copy and paste that program into Textwrangler or a similar program; save it to your desktop as 'canadiana.sh'. Open your terminal program (which you can find under 'applications' and then 'utilities'.) Navigate to your desktop:
+
+`cd desktop`
+
+then tell your computer that this 'canadiana.sh' program is one that you want to run:
+
+`sudo chmod 700 file.sh`
+
+And then you can run it by typing:
+
+`./canadiana.sh`  but *don't* do that yet! You'll need to change the search parameters to reflect your own interests. Do you see how you can do that?
+
+### Windows instructions:
 
 
