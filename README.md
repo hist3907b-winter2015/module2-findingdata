@@ -16,7 +16,7 @@ You might like to begin with [this list of resources; more being added in time.]
 
 
 ### And don't forget serendipity
-Follow researchers and institutions in your field of study. Today on Twitter I saw something that struck me as an excellent find. Penn Libraries tweeted, and I retweeted, [a link to a traveller's diary from the 19th century](http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5103295) - a woman who sailed up the Nile 
+Follow researchers and institutions in your field of study. Today on Twitter I saw something that struck me as an excellent find. Penn Libraries tweeted, and I retweeted, [a link to a traveller's diary from the 19th century](http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5103295) - a woman who sailed from the US to Europe and thence the Nile, which she ascended and explored. 
 [My tweet](https://twitter.com/electricarchaeo/status/555078078511460352) led to a flurry of activity amongst scholars, and even now, the transcription has begun...
 
 ## But first... let's set a bit of framework.
@@ -24,4 +24,4 @@ If we're going to find data, we need to be able to access the power of our machi
 
 ...and then thinking about what 'search' actually means. Check out Ted Underwood's piece on ['Theorizing Research Practices We Forgot to Theorize Twenty Years Ago'](https://www.ideals.illinois.edu/handle/2142/50034). 
 
-Finally, Cameron Blevins has some thoughts on the ['perpetual sunrise of methodology'](http://www.cameronblevins.org/posts/perpetual-sunrise-methodology/)
+Finally, Cameron Blevins has some thoughts on the ['perpetual sunrise of methodology'](http://www.cameronblevins.org/posts/perpetual-sunrise-methodology/).
