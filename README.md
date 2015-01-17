@@ -19,5 +19,9 @@ You might like to begin with [this list of resources; more being added in time.]
 Follow researchers and institutions in your field of study. Today on Twitter I saw something that struck me as an excellent find. Penn Libraries tweeted, and I retweeted, [a link to a traveller's diary from the 19th century](http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5103295) - a woman who sailed up the Nile 
 [My tweet](https://twitter.com/electricarchaeo/status/555078078511460352) led to a flurry of activity amongst scholars, and even now, the transcription has begun...
 
-## But first...
+## But first... let's set a bit of framework.
 If we're going to find data, we need to be able to access the power of our machines, to get them to do what we want. It's worth thinking about what Corey Doctorow has called [the war on general purpose computing](http://boingboing.net/2012/08/23/civilwar.html) as we begin...
+
+...and then thinking about what 'search' actually means. Check out Ted Underwood's piece on ['Theorizing Research Practices We Forgot to Theorize Twenty Years Ago'](https://www.ideals.illinois.edu/handle/2142/50034). 
+
+Finally, Cameron Blevins has some thoughts on the ['perpetual sunrise of methodology'](http://www.cameronblevins.org/posts/perpetual-sunrise-methodology/)
