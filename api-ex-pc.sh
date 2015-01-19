@@ -5,7 +5,9 @@
 # this requires JQ - you can get it at http://stedolan.github.io/jq/download/
 # make sure you install/unzip that to the same folder as this script.
 # this also requires wget - instructions at http://programminghistorian.org/lessons/automated-downloading-with-wget
-# and finally, get coreutils for windows: http://gnuwin32.sourceforge.net/packages/coreutils.htm
+# and finally, get coreutils for windows: http://gnuwin32.sourceforge.net/packages/coreutils.htm 
+# make sure you put the path to coreutils in your windows' system environment PATH variable http://verahill.blogspot.ca/2013/03/352-installing-coreutils-and-sed-gawk.html
+# you should probably also download and install sed and gawk, instructions in the link above.
 
 # only code difference in this script compared to the original posted by Milligan (based on Marti, see http://ianmilligan.ca/api-example-sh/) is that http had to be added in line 30, with awk.
 # 
