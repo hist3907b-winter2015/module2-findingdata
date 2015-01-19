@@ -89,6 +89,8 @@ I've put a copy [in the module 2 repository, to save you the trouble.](https://g
 
 First question: do you have wget installed on your computer? If you don't, you'll need it for this exercise and the next one (if you look in the program 'api-ex-mac.sh', you'll see that the final line of the program asks wget to go get the results you've scraped from Canadiana). Installing wget is quite straightforward - follow [the Programming Historian's instructions](http://programminghistorian.org/lessons/automated-downloading-with-wget).
 
+Our program requires a helper program that reads the .json data - It's called JQ. You can install this by using HOMEBREW. But to install homebrew, visit [http://brew.sh](http://brew.sh) and follow instructions. Then, to install jq, type `brew install jq` from your terminal.
+
 Now, download api-ex-mac.sh from the repository and save it to your desktop. Open your terminal program (which you can find under 'applications' and then 'utilities'.) Navigate to your desktop:
 
 `cd desktop`
