@@ -55,11 +55,11 @@ That is, instead of *you* punching in the search terms, and copying and pasting 
 
 The 'Canadiana Discovery Portal' has tonnes of materials related to Canada's history, from a wide variety of sources. Its search page is at: http://search.canadiana.ca/
 
-+ Go there, and search "ottawa" and set the date range to 1800 to 1900. Hit enter. You are presented with a page of results. But do you notice the address bar of your browser? It'll say something like this:
++ Go there, and search "ottawa" and set the date range to 1800 to 1900. Hit enter. You are presented with a page of results -56 249 results! That's a lot of data. But do you notice the address bar of your browser? It'll say something like this:
 
 http://search.canadiana.ca/search?q=ottawa&field=&df=1800&dt=1900
 
-56 249 results! That's a lot of data. Your search query has been put into the URL. You're looking at the API! Everything after /search is a command that you are sending to the Canadiana server.
+Your search query has been put into the URL. You're looking at the API! Everything after /search is a command that you are sending to the Canadiana server.
 
 Scroll through the results, and you'll see a number just before the ?
 
@@ -71,9 +71,9 @@ http://search.canadiana.ca/search/4?df=1800&dt=1900&q=ottawa&field=
 
 ....all the way up to 5625 (ie, 10 results per page, so 56249 / 10).
 
- If you go to http://search.canadiana.ca/support/api you can see the full list of options. What we are particularly interested in now is the bit that looks like this:
+If you go to http://search.canadiana.ca/support/api you can see the full list of options. What we are particularly interested in now is the bit that looks like this:
 
-&fmt=json
+`&fmt=json`
 
 Add that to your query URL. How different the results now look! What's nice here is that the data is formatted in a way that makes sense to a machine - which we'll learn more about in due course.
 
@@ -109,14 +109,12 @@ Begin by making a folder for this exercise on your desktop.
 1. You'll need gitbash (which comes with git; I know you already have github on your desktop, which has git with it, but download [git](http://git-scm.com/download/win) and install it, and that will give you the git bash utility, and will not mess with your github set up). 'Bash' is  "a shell that runs commands once you type the name of a command and press <enter> on your keyboard." You can see screenshots and find help on all this [here](http://openhatch.org/missions/windows-setup/open-git-bash-prompt). You will be running our scraper program from within this shell.
 2. You'll need jq [download here](http://stedolan.github.io/jq/download/). You're going to put this in the folder you've made for this exercise.
 3. You'll need CoreUtils [from here](http://gnuwin32.sourceforge.net/downlinks/coreutils.php). Download and install this.
-4. You need to tell your computer that CoreUtils now exists on your machine. You do this by:
+4. You need to tell your computer that CoreUtils now exists on your machine. Go to your computer's control panel. On 'my computer' (or whatever Windows calls it these days) right click and select 'properties'. Then select 'advanced'.
+5. Click on the 'environment variables' button.
+6. In the pop-up box that opens, there is a box marked 'system variables'. Highlight the one called 'Path'. Click on 'Edit'.
+7. In the variable box that you can now edit, there should already be many things. Scroll to the very end of that (to the right) and add:
 
-1. Go to your computer's control panel. On 'my computer' (or whatever Windows calls it these days) right click and select 'properties'. Then select 'advanced'.
-2. Click on the 'environment variables' button.
-3. In the pop-up box that opens, there is a box marked 'system variables'. Highlight the one called 'Path'. Click on 'Edit'.
-4. In the variable box that you can now edit, there should already be many things. Scroll to the very end of that (to the right) and add:
-
-`;C:\Program Files(x86)\GnuWin32\bin'
+`;C:\Program Files(x86)\GnuWin32\bin`
 
 ...so yes, start that with a semicolon- and what you are putting in is the exact location of where the coreutils package of programs is located.
 
@@ -126,9 +124,12 @@ Now:
 - download api-ex-pc.sh from our [repository](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/api-ex-pc.sh)
 - open git bash - it'll be available via your programs menu. You do not want 'Git Gui' nor 'GitHub'. Git bash. 
 - inside git bash, you change directory so that you are working within the folder you made on your desktop. The command to change directory is `cd`  ie `cd course-notes` would go one level down into a folder called 'course notes'. To go one level up, you'd type `cd ..` <- ie, two periods. More help on finding your way around this interface is [here](http://programminghistorian.org/lessons/intro-to-bash)
-- Once you're in the right folder, all you have to do is type the name of our programme: `api-ex-pc.sh' and your program will query the Canadiana API, save the results, and then use wget to retrieve the full text of each result by asking the API for those results in turn. *But don't do that yet!* Let it run, and you can check the folder later for a file called 'output.txt' which will have all of your documents.
+- Once you're in the right folder, all you have to do is type the name of our programme: `api-ex-pc.sh` and your program will query the Canadiana API, save the results, and then use wget to retrieve the full text of each result by asking the API for those results in turn. *But don't do that yet!* 
 
-You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name, and then run the new command. Move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
+You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name (make sure to keep the same file extenion, `.sh` - in notepad, change the save as file type to `all files` and then write the new name, e.g, `api-ex-pc-2.sh`, and then run your program by typing its name at the prompt in the git bash window. When it's finished, move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
+
+#### You've got a pretty powerful tool now for grabbing data from one of the largest portals for Canadian history!
+Just remember to move your results from your folder before running a new search.
 
 # Wget
 
