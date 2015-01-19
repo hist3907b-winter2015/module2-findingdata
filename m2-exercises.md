@@ -1,4 +1,4 @@
-_All four exercises are on this page. Don't forget to scroll. If you have difficulties, or if the instructions need clarification, please click the 'issues' button and leave a note. Feel free to fork and improve these instructions, if you are so inclined._
+_All four exercises are on this page. Don't forget to scroll. If you have difficulties, or if the instructions need clarification, please click the 'issues' button and leave a note. Feel free to fork and improve these instructions, if you are so inclined. Remember, these exercises get progressively more difficult, and will require you to either download materials or read materials on other websites. Give yourself plenty of time. Try them all, and remember you can turn to (I encourage you to!) your classmates for help. Work together!_
 
 # Background
 Where do we go to find data? Part of that problem is solved by knowing what question you are asking, and what _kinds_ of data would help solve that question. Let's assume that you have a pretty good question you want an answer to - say, something concerning social and household history in early Ottawa, like what was the role of 'corner' stores (if such things exist?) in fostering a sense of neighbourhood - and begin thinking about how you'd find data to explore that question. 
@@ -83,33 +83,55 @@ http://eco.canadiana.ca/view/oocihm.16278/?r=0&s=1&fmt=json&api_text=1
 
 The problem is: how to retrieve those oocihm numbers. The answer is, 'we write a program'. And the program that you want can be [found here](http://ianmilligan.ca/api-example-sh/). Study that program carefully. There are a number of useful things happening in there, notably 'curl', 'jq', 'sed', 'awk'. curl  is a program for downloading webpages, jq for dealing with json, and sed and awk for searching within and cleaning up text. If this all sounds greek to you, there is an excellent gentle introduction over at [William Turkel's blog](http://williamjturkel.net/2013/06/15/basic-text-analysis-with-command-line-tools-in-linux/).
 
+I've put a copy [in the module 2 repository, to save you the trouble.](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/api-ex-mac.sh)
+
 ### Mac instructions:
 
-If you have a Mac, copy and paste that program into Textwrangler or a similar program; save it to your desktop as 'canadiana.sh'. Open your terminal program (which you can find under 'applications' and then 'utilities'.) Navigate to your desktop:
+First question: do you have wget installed on your computer? If you don't, you'll need it for this exercise and the next one (if you look in the program 'api-ex-mac.sh', you'll see that the final line of the program asks wget to go get the results you've scraped from Canadiana). Installing wget is quite straightforward - follow [the Programming Historian's instructions](http://programminghistorian.org/lessons/automated-downloading-with-wget).
+
+Now, download api-ex-mac.sh from the repository and save it to your desktop. Open your terminal program (which you can find under 'applications' and then 'utilities'.) Navigate to your desktop:
 
 `cd desktop`
 
-then tell your computer that this 'canadiana.sh' program is one that you want to run:
+then tell your computer that this 'api-ex-mac.sh' program is one that you want to run:
 
 `sudo chmod 700 file.sh`
 
 And then you can run it by typing:
 
-`./canadiana.sh`  but *don't* do that yet! You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Do that, then run the command. Move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
+`./api-ex-mac.sh`  but *don't* do that yet! You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name, and then run the new command. Move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
 
 ### Windows instructions:
-1. You'll need gitbash
-2. You'll need jq
-3. You'll need CoreUtils
+Begin by making a folder for this exercise on your desktop.
 
-Install these. Restart your computer. 
+1. You'll need gitbash (which comes with git; I know you already have github on your desktop, which has git with it, but download [git](http://git-scm.com/download/win) and install it, and that will give you the git bash utility, and will not mess with your github set up). 'Bash' is  "a shell that runs commands once you type the name of a command and press <enter> on your keyboard." You can see screenshots and find help on all this [here](http://openhatch.org/missions/windows-setup/open-git-bash-prompt). You will be running our scraper program from within this shell.
+2. You'll need jq [download here](http://stedolan.github.io/jq/download/). You're going to put this in the folder you've made for this exercise.
+3. You'll need CoreUtils [from here](http://gnuwin32.sourceforge.net/downlinks/coreutils.php). Download and install this.
+4. You need to tell your computer that CoreUtils now exists on your machine. You do this by:
 
-Or maybe cygwin. I'm installing it right now, will get back to you.
+1. Go to your computer's control panel. On 'my computer' (or whatever Windows calls it these days) right click and select 'properties'. Then select 'advanced'.
+2. Click on the 'environment variables' button.
+3. In the pop-up box that opens, there is a box marked 'system variables'. Highlight the one called 'Path'. Click on 'Edit'.
+4. In the variable box that you can now edit, there should already be many things. Scroll to the very end of that (to the right) and add:
 
-_more to come_
+`;C:\Program Files(x86)\GnuWin32\bin'
+
+...so yes, start that with a semicolon- and what you are putting in is the exact location of where the coreutils package of programs is located.
+
+Finally, you'll need wget installed on your machine. Get it [here](http://users.ugent.be/~bpuype/wget/) and download it to C:Windows directory.
+
+Now:  
+- download api-ex-pc.sh from our [repository](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/api-ex-pc.sh)
+- open git bash - it'll be available via your programs menu. You do not want 'Git Gui' nor 'GitHub'. Git bash. 
+- inside git bash, you change directory so that you are working within the folder you made on your desktop. The command to change directory is `cd`  ie `cd course-notes` would go one level down into a folder called 'course notes'. To go one level up, you'd type `cd ..` <- ie, two periods. More help on finding your way around this interface is [here](http://programminghistorian.org/lessons/intro-to-bash)
+- Once you're in the right folder, all you have to do is type the name of our programme: `api-ex-pc.sh' and your program will query the Canadiana API, save the results, and then use wget to retrieve the full text of each result by asking the API for those results in turn. *But don't do that yet!* Let it run, and you can check the folder later for a file called 'output.txt' which will have all of your documents.
+
+You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name, and then run the new command. Move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
 
 # Wget
 
-Finally, wget. This is an extremely useful piece of software. First thing: you'll need to install it. As ever, this is simple on a Mac and a bit more difficult on a PC. Go to [the programming historian tutorial on wget](http://programminghistorian.org/lessons/automated-downloading-with-wget) and get it installed.
+Finally, we can use wget to retrieve data in cases where there is no API. 
 
-This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/2015/01/downloading-sources2.pdf).
+(If you skipped the previous exercise, you need to install it. Go to [the programming historian tutorial on wget](http://programminghistorian.org/lessons/automated-downloading-with-wget) and follow the relevant instructions (depending on your operating system) to install it.)
+
+This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/2015/01/downloading-sources2.pdf). I am not going to spell out the steps this time; I want you to carefully peruse Milligan's presentation, and see if you can follow along (pgs 52-64: he uses wget plus a text file so that wget auto-completes the URLs and scrapes the data found there - much like the final line of the program in exercise 3). There will often be cases where you want to do something, and you find someone's presentations or notes which *almost* tell you everything you need to know. Alternatively, you can complete the tutorial from the [Programming historian](http://programminghistorian.org/lessons/automated-downloading-with-wget) for this exercise. In either case, keep notes on what you've done, what works, where the problems seem to lie, what the tacit knowledge is that isn't made clear (ie, are there assumptions being made in the tutorial or the presentation that are opaque to you?). 
