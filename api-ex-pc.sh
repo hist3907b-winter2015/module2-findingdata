@@ -1,5 +1,6 @@
 #! /bin/bash
  
+# by Steve Marti, by way of Ian Milligan http://ianmilligan.ca/api-example-sh/ 
 # slightly modified script for using on windows in git bash with coreutils
 # IMPORTANT:
 # this requires JQ - you can get it at http://stedolan.github.io/jq/download/
