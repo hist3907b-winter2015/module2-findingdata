@@ -133,8 +133,18 @@ Just remember to move your results from your folder before running a new search.
 
 # Wget
 
-Finally, we can use wget to retrieve data in cases where there is no API. 
+Finally, we can use wget to retrieve data in cases where there is no API. If you look carefully at the program in exercise 3, you'll see we used the wget command. In this exercise, we search for a collection in the internet archive, grab all of the file identifiers, and feed these into wget _from the command line or terminal_. One command, thousands of documents!
 
 (If you skipped the previous exercise, you need to install it. Go to [the programming historian tutorial on wget](http://programminghistorian.org/lessons/automated-downloading-with-wget) and follow the relevant instructions (depending on your operating system) to install it.)
 
 This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/2015/01/downloading-sources2.pdf). I am not going to spell out the steps this time; I want you to carefully peruse Milligan's presentation, and see if you can follow along (pgs 52-64: he uses wget plus a text file so that wget auto-completes the URLs and scrapes the data found there - much like the final line of the program in exercise 3). There will often be cases where you want to do something, and you find someone's presentations or notes which *almost* tell you everything you need to know. Alternatively, you can complete the tutorial from the [Programming historian](http://programminghistorian.org/lessons/automated-downloading-with-wget) for this exercise. In either case, keep notes on what you've done, what works, where the problems seem to lie, what the tacit knowledge is that isn't made clear (ie, are there assumptions being made in the tutorial or the presentation that are opaque to you?). 
+
+### hints:
+- remember that wget is run from your terminal (Mac) or command line (PC). Do you know where to find these?
+- if you're working on a mac, when you get to the point that Milligan directs you to save the search results file (which came as csv) as a .txt file, you need to select the unicode-16 txt file option.
+- the wget command is `wget -r -H -nc -np -nH --cut-dirs=2 -A .txt -e robots=off -l1 -i ./itemlist.txt -B 'http://archive.org/download/'`
+- You might want to make a note in your notebook about what all those 'flags' in the command are doing. [Here's the wget manual](http://www.gnu.org/software/wget/manual/wget.html)
+- Once it starts working, you might see something like this:
+![Imgur](http://i.imgur.com/Sh3LEQ4.png)
+
+The command is finding a bunch of index.html files at first, which it is discarding because we're interested in the full text stuff instead. Let it run; eventually it'll start finding the stuff you're looking for.
