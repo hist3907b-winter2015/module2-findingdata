@@ -146,5 +146,6 @@ This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/
 - You might want to make a note in your notebook about what all those 'flags' in the command are doing. [Here's the wget manual](http://www.gnu.org/software/wget/manual/wget.html)
 - Once it starts working, you might see something like this:
 ![Imgur](http://i.imgur.com/Sh3LEQ4.png)
+- if you're really stuck, see this [blog post from the Internet Archive](http://blog.archive.org/2012/04/26/downloading-in-bulk-using-wget/)
 
 The command is finding a bunch of index.html files at first, which it is discarding because we're interested in the full text stuff instead. Let it run; eventually it'll start finding the stuff you're looking for.
