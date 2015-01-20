@@ -147,7 +147,7 @@ This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/
 - Once it starts working, you might see something like this:
 ![Imgur](http://i.imgur.com/Sh3LEQ4.png)
 
-*but* if that's all you get, and nothing downloads, the problem is in your txt file. *Make sure* to create your txt file with a text editor (textwrangler, sublime text, notepad) and *not* from `save as...txt` in excel.
+*but* if that's all you get, and nothing downloads, the problem is in your txt file. *Make sure* to create your txt file with a text editor (textwrangler, sublime text, notepad) and *not* from `save as...txt` in excel. (If you have an option when you create the text file, make sure the encoding is 'utf-8' rather than 'utf-16').
 - if you're really stuck, see this [blog post from the Internet Archive](http://blog.archive.org/2012/04/26/downloading-in-bulk-using-wget/)
 
 
