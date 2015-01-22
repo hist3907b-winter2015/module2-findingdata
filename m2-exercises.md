@@ -143,6 +143,7 @@ This section will follow [Milligan p52-64](https://ianmilli.files.wordpress.com/
 - remember that wget is run from your terminal (Mac) or command line (PC). Do you know where to find these?
 - if you're working on a mac, when you get to the point that Milligan directs you to save the search results file (which came as csv) as a .txt file, you need to select the unicode-16 txt file option.
 - the wget command is `wget -r -H -nc -np -nH --cut-dirs=2 -A .txt -e robots=off -l1 -i ./itemlist.txt -B 'http://archive.org/download/'`
+- to make sure everything is working, perhaps make a copy of your itemlist.txt file with only ten or so items in it. Call it 'itemlist-short.txt' and put that in the command. That way, if there are errors, you'll find out sooner rather than later!
 - You might want to make a note in your notebook about what all those 'flags' in the command are doing. [Here's the wget manual](http://www.gnu.org/software/wget/manual/wget.html)
 - Once it starts working, you might see something like this:
 ![Imgur](http://i.imgur.com/Sh3LEQ4.png)
