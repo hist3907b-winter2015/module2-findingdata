@@ -24,7 +24,7 @@ Here are some useful starting points, datasets that have already been collected,
 +  [Ontario top baby names (male), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-male)
 +  [Ontario top baby names (female), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-female)
 +  [Marriage registrations in Ontario (by location), 1927-2010](http://www.ontario.ca/government/marriage-registrations-ontario-location)
-
 + [Google Books Advanced Search](http://books.google.com/advanced_book_search)
 + [Internet Archive Advanced Search](http://archive.org/advancedsearch.php)
 + [Hathi Trust Advanced Search](http://babel.hathitrust.org/cgi/ls?a=page;page=advanced)
++ [Latin texts on Internet Archive](https://github.com/dbamman/latin-texts/tree/master/metadata) <- you'd feed this into wget a la [exercise 4](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/m2-exercises.md) to grab all this material
