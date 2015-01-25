@@ -106,7 +106,7 @@ And then you can run it by typing:
 ### Windows instructions:
 Begin by making a folder for this exercise on your desktop.
 
-1. You'll need gitbash (which comes with git; I know you already have github on your desktop, which has git with it, but download [git](http://git-scm.com/download/win) and install it, and that will give you the git bash utility, and will not mess with your github set up). 'Bash' is  "a shell that runs commands once you type the name of a command and press <enter> on your keyboard." You can see screenshots and find help on all this [here](http://openhatch.org/missions/windows-setup/open-git-bash-prompt). You will be running our scraper program from within this shell.
+1. You'll need *gitbash* (which comes with git; I know you already have github on your desktop, which has _git shell_ but that's not what we want. Download [git](http://git-scm.com/download/win) and install it, and that will give you the git bash utility, and will not mess with your github set up. 'Bash' is  "a shell that runs commands once you type the name of a command and press <enter> on your keyboard." You can see screenshots and find help on all this [here](http://openhatch.org/missions/windows-setup/open-git-bash-prompt). You will be running our scraper program from within this shell.
 2. You'll need jq [download here](http://stedolan.github.io/jq/download/). You're going to put this in the folder you've made for this exercise.
 3. You'll need CoreUtils [from here](http://gnuwin32.sourceforge.net/downlinks/coreutils.php). Download and install this.
 4. You need to tell your computer that CoreUtils now exists on your machine. Go to your computer's control panel. On 'my computer' (or whatever Windows calls it these days) right click and select 'properties'. Then select 'advanced'.
@@ -122,7 +122,7 @@ Finally, you'll need wget installed on your machine. Get it [here](http://users.
 
 Now:  
 - download api-ex-pc.sh from our [repository](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/api-ex-pc.sh)
-- open git bash - it'll be available via your programs menu. You do not want 'Git Gui' nor 'GitHub'. Git bash. 
+- open *git bash* - it'll be available via your programs menu. You do not want 'Git Gui' nor 'GitHub' nor 'Git Shell'. *Git bash*. 
 - inside git bash, you change directory so that you are working within the folder you made on your desktop. The command to change directory is `cd`  ie `cd course-notes` would go one level down into a folder called 'course notes'. To go one level up, you'd type `cd ..` <- ie, two periods. More help on finding your way around this interface is [here](http://programminghistorian.org/lessons/intro-to-bash)
 - Once you're in the right folder, all you have to do is type the name of our programme: `api-ex-pc.sh` and your program will query the Canadiana API, save the results, and then use wget to retrieve the full text of each result by asking the API for those results in turn. *But don't do that yet!* 
 
