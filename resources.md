@@ -28,3 +28,4 @@ Here are some useful starting points, datasets that have already been collected,
 + [Internet Archive Advanced Search](http://archive.org/advancedsearch.php)
 + [Hathi Trust Advanced Search](http://babel.hathitrust.org/cgi/ls?a=page;page=advanced)
 + [Latin texts on Internet Archive](https://github.com/dbamman/latin-texts/tree/master/metadata) <- you'd feed this into wget a la [exercise 4](https://github.com/hist3907b-winter2015/module2-findingdata/blob/master/m2-exercises.md) to grab all this material
++ The [Digital Public Library of America](http://dp.la) is an amazing resource, a resource of resources. [Here's a quick R script to query that API](https://gist.github.com/shawngraham/0907ab2c2185cfe9f91b)
