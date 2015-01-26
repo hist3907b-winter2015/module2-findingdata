@@ -103,7 +103,7 @@ And then you can run it by typing:
 
 `./api-ex-mac.sh`  but *don't* do that yet! You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name, and then run the new command. Move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
 
-### Windows instructions:
+### Windows7 instructions:
 Begin by making a folder for this exercise on your desktop.
 
 1. You'll need *gitbash* (which comes with git; I know you already have github on your desktop, which has _git shell_ but that's not what we want. Download [git](http://git-scm.com/download/win) and install it, and that will give you the git bash utility, and will not mess with your github set up. 'Bash' is  "a shell that runs commands once you type the name of a command and press <enter> on your keyboard." You can see screenshots and find help on all this [here](http://openhatch.org/missions/windows-setup/open-git-bash-prompt). You will be running our scraper program from within this shell.
@@ -127,6 +127,28 @@ Now:
 - Once you're in the right folder, all you have to do is type the name of our programme: `api-ex-pc.sh` and your program will query the Canadiana API, save the results, and then use wget to retrieve the full text of each result by asking the API for those results in turn. *But don't do that yet!* 
 
 You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name (make sure to keep the same file extenion, `.sh` - in notepad, change the save as file type to `all files` and then write the new name, e.g, `api-ex-pc-2.sh`, and then run your program by typing its name at the prompt in the git bash window. When it's finished, move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
+
+#Windows 8 instructions
+
+(nb this can also work for Windows 7 *if* you've got powershell 3 installed. Win7 comes with an earlier version, so you'd have to update it, which isn't straightforward).
+
+1. Make a folder somewhere handy for this exercise. Download the `api-ex-pc.sh` program into it, as well as [jq](http://stedolan.github.io/jq/download/)
+2. Find, and run, 'Powershell'
+3. At the prompt, type in these commands in sequence:
+
+`set-executionpolicy unrestricted -s cu`
+
+Say 'yes' at the prompt that asks if you really want to do this.
+
+`iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
+
+`scoop install 7zip coreutils curl git grep openssh sed wget vim grep`
+
+A number of components will download and get configured to work from within powershell. When they finish, at the command prompt, you can run your program like so:
+
+`./api-ex-pc.sh`
+
+If all goes well A new window will pop open, and you'll be downloading material from Canadiana! You can close that window where the downloading is happening to stop the process. If you open your program, you can adjust it to search for your own requests [see this discussion for hints on how to do this](https://github.com/hist3907b-winter2015/module2-findingdata/issues/2)
 
 #### You've got a pretty powerful tool now for grabbing data from one of the largest portals for Canadian history!
 Just remember to move your results from your folder before running a new search.
