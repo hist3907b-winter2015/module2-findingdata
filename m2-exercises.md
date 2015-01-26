@@ -128,9 +128,9 @@ Now:
 
 You'll need to change the search parameters to reflect your own interests. Do you see how you can do that? Open the program in a text editor, make the relevant change, save with a new name (make sure to keep the same file extenion, `.sh` - in notepad, change the save as file type to `all files` and then write the new name, e.g, `api-ex-pc-2.sh`, and then run your program by typing its name at the prompt in the git bash window. When it's finished, move your results into a sensible location on your computer. Make a new entry (or entries) into your research notebook about this process, what worked, what hasn't, what you've found, where things are, and so on. You might want to upload your script (your .sh file) to your repository. Remember: the goal is so that you can come back to all this in a month's time and figure out _exactly what you did_ to collect your data. 
 
-#Windows 8 instructions
+###Windows 8 instructions
 
-(nb this can also work for Windows 7 *if* you've got powershell 3 installed. Win7 comes with an earlier version, so you'd have to update it, which isn't straightforward).
+_nb this can also work for Windows 7 *if* you've got powershell 3 installed. Win7 comes with an earlier version, so you'd have to update it, [which isn't straightforward](https://technet.microsoft.com/en-us/library/hh847837.aspx). I'm grateful to [Denis Gladkikh for his blog post on the matter](http://outcoldman.com/en/archive/2014/07/20/scoop/)._
 
 1. Make a folder somewhere handy for this exercise. Download the `api-ex-pc.sh` program into it, as well as [jq](http://stedolan.github.io/jq/download/)
 2. Find, and run, 'Powershell'
