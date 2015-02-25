@@ -19,7 +19,7 @@ Here are some useful starting points, datasets that have already been collected,
 + Canadiana Discovery Portal [link](http://search.canadiana.ca/support/api)
 + Archaeology Data Service [link](http://archaeologydataservice.ac.uk/)
 +  [History of the Federal Electoral Ridings, 1867-2010](http://data.gc.ca/data/en/dataset/ea8f2c37-90b6-4fee-857e-984d3060184e)
-+  [Soldiers of the First World War](Soldiers of the First World War database.)
++  [Soldiers of the First World War](http://data.gc.ca/data/en/dataset/6a6e6a79-9e2a-48cc-99ec-163da26d15e9)
 +  [Birth registrations in Ontario (by location), 1912-2010](http://www.ontario.ca/government/birth-registrations-ontario-location)
 +  [Ontario top baby names (male), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-male)
 +  [Ontario top baby names (female), 1917-2010](http://www.ontario.ca/government/ontario-top-baby-names-female)
