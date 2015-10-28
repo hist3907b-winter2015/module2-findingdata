@@ -1,0 +1,3 @@
+# enter this at the prompt:
+
+$ sed 's/oocihm/\n&/2g' output.txt | split -dl1 --additional-suffix=.txt - text
